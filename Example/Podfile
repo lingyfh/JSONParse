@@ -1,0 +1,6 @@
+use_frameworks!
+
+target 'JSONParse_Example' do
+  pod 'JSONParse', :path => '../'
+  pod 'AFNetworking', '~> 3.0'
+end
