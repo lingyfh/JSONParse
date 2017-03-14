@@ -116,6 +116,9 @@
         return def;
     }
     
+    if (![value isKindOfClass:[def class]]) {
+        return def;
+    }
     return value;
 }
 
