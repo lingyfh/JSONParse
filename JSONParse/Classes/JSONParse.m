@@ -116,7 +116,7 @@
         return def;
     }
     
-    if (![value isKindOfClass:[def class]]) {
+    if (![value isKindOfClass:[def superclass]]) {
         return def;
     }
     return value;
