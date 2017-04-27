@@ -116,7 +116,7 @@
         return def;
     }
     
-    if (![value isKindOfClass:[def superclass]]) {
+    if (![value isKindOfClass:[def classForCoder]]) {
         return def;
     }
     return value;
