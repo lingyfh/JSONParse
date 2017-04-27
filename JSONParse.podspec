@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'JSONParse'
-  s.version          = '0.1.2'
+  s.version          = '0.1.3'
   s.summary          = 'A simple json parse framework.'
 
 # This description is used to generate tags and improve search results.
