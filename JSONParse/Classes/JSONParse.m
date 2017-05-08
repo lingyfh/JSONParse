@@ -45,17 +45,17 @@
 
 + (NSString *)dictToNSString:(NSDictionary *)dict defValue:(NSString *)def {
     if (![dict isKindOfClass:[NSDictionary class]]) {
-        return [self objIsNull:def] ? @{} : def;
+        return [self objIsNull:def] ? @"" : def;
     }
     if ([self objIsNull:dict]) {
-        return [self objIsNull:def] ? @{} : def;
+        return [self objIsNull:def] ? @"" : def;
     }
     NSError *err;
     NSData *dictData = [NSJSONSerialization dataWithJSONObject:dict options:NSJSONWritingPrettyPrinted error:&err];
     if ([self objIsNull:err]) {
         return [[NSString alloc] initWithData:dictData encoding:NSUTF8StringEncoding];
     }
-    return [self objIsNull:def] ? @{} : def;
+    return [self objIsNull:def] ? @"" : def;
 }
 
 
